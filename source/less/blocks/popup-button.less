@@ -1,0 +1,31 @@
+.popup-button {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ff4b4b;
+  box-shadow: 1px 3px 6px #497957;
+  border-radius: 20px;
+  border: none;
+  padding: 6px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    padding: 14px 26px;
+    margin-top: -12px;
+    border-radius: 25px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

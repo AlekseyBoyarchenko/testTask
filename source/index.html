@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test task</title>
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header header--closed header--nojs">
+    <ul class="header__list">
+      <li class="header__item">
+        <a class="header__link header__list--current" href="#">Text</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">Text</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">Text</a>
+      </li>
+    </ul>
+    <button class="header__nav-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="header__navigation">
+      <ul class="header__main-nav site-list site-list--closed site-list--nojs">
+        <li class="site-list__item site-list__item--current">
+          <a class="site-list__link" href="#">Text</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Text</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Text</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Text</a>
+        </li>
+        <li class="site-list__item">
+          <button class="site-list__popup-button popup-button">Open pop-up button</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="block-1 slider">
+      <div class="slider__box swiper mySwiper">
+        <div class="slider__wrapper swiper-wrapper">
+          <div class="slider__slide swiper-slide">
+            <h1 class="slider__title">H1 text</h1>
+            <button class="slider__popup-button popup-button">Open pop-up button</button>
+          </div>
+          <div class="slider__slide swiper-slide">
+            <h2 class="slider__title">H1 text</h2>
+            <button class="slider__popup-button popup-button">Open pop-up button</button>
+          </div>
+        </div>
+        <div class="slider__button-next swiper-button-next"></div>
+        <div class="slider__button-prev swiper-button-prev"></div>
+      </div>
+    </section>
+    <section class="block-2">
+      <h2 class="block-2__title block__title">H2 text</h2>
+      <ol class="block-2__elements-list-1">
+        <li class="block-2__elements-item"></li>
+        <li class="block-2__elements-item"></li>
+      </ol>
+      <ol class="block-2__elements-list-2">
+        <li class="block-2__elements-item-2"></li>
+        <li class="block-2__elements-item-2"></li>
+      </ol>
+    </section>
+    <section class="block-3">
+      <h2 class="block-3__title block__title">H2 text</h2>
+      <div class="block-3__content">
+        <ul class="block-3__content-list">
+          <li class="block-3__content-item block-3__content-item--current"></li>
+          <li class="block-3__content-item block-3__content-item"></li>
+          <li class="block-3__content-item block-3__content-item"></li>
+          <li class="block-3__content-item block-3__content-item"></li>
+          <li class="block-3__content-item block-3__content-item"></li>
+        </ul>
+        <p class="block-3__description">Text utp</p>
+        <button class="block-3__popup-button popup-button">Open pop-up button</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link" href="#">Text</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Text</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Text</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Text</a>
+      </li>
+    </ul>
+  </footer>
+  <div class="modal-container modal-container--closed">
+    <div class="modal__content">
+      <button class="modal__close-button"><span class="visually-hidden">Закрыть модальное окно</span>X</button>
+      <p class="modal__description">Pop-up</p>
+    </div>
+  </div>
+
+  <script src="js/main.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+</body>
+</html>

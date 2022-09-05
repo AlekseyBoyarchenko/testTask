@@ -1,0 +1,138 @@
+.header {
+  position: relative;
+  padding: 20px;
+  background-color: #b47ff6;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 57px 55px 57px 153px;
+  }
+}
+
+.header__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__item {
+  margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 62px;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.header__link {
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header__list--current {
+  text-decoration: underline;
+}
+
+.header__nav-button {
+  position: absolute;
+  display: block;
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    right: 40px;
+    bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 55px;
+    bottom: 30px;
+    width: 49px;
+    height: 49px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header--closed .header__nav-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 1.5px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0#ffffff, 0 16px 0 0#ffffff;
+
+  @media (min-width: @desktop-width) {
+    width: 43px;
+    height: 3px;
+    box-shadow: 0 9px 0 0#ffffff, 0 18px 0 0#ffffff;
+  }
+}
+
+.header--opened .header__nav-button {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -1px;
+    width: 24px;
+    height: 1.5px;
+    background-color: #ffffff;
+
+    @media (min-width: @desktop-width) {
+      width: 49px;
+      height: 3px;
+    }
+  }
+
+  &::before {
+    transform: rotate(30deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-30deg);
+  }
+}
+
+.header--nojs .header__nav-button {
+  display: none;
+}
